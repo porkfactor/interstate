@@ -1,0 +1,6 @@
+[submodule "micropython/modules/ulab"]
+	path = micropython/modules/ulab
+	url = https://github.com/v923z/micropython-ulab.git
+[submodule "micropython/modules/qrcode"]
+	path = micropython/modules/qrcode
+	url = https://github.com/pimoroni/QR-Code-Generator
