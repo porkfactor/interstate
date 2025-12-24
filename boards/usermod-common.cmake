@@ -1,3 +1,4 @@
+include_directories(${PIMORONI_PICO_PATH})
 include_directories(${CMAKE_CURRENT_LIST_DIR}/../../)
 include_directories(${PIMORONI_PICO_PATH}/micropython)
 

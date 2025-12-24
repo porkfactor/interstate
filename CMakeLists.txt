@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.25.0)
 
 set(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
+set(CMAKE_C_COMPILER_LAUNCHER ccache)
+set(CMAKE_CXX_COMPILER_LAUNCHER ccache)
+set(CMAKE_BUILD_TYPE MinSizeRel)
 
 set(PICO_BOARD pico2_w)
 
@@ -43,9 +46,6 @@ FetchContent_Declare(micropython
         lib/btstack
     GIT_SHALLOW FALSE
     SOURCE_SUBDIR "ports/rp2"
-    CMAKE_ARGS
-        -DCMAKE_C_COMPILER_LAUNCHER=ccache 
-        -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
 )
 
 FetchContent_MakeAvailable(micropython)
